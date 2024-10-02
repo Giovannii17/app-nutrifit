@@ -1,0 +1,8 @@
+{
+  "name": "app-nutrifit",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "6622976d"
+}
