@@ -4,20 +4,21 @@
 
     <div class="login-container">
       <ion-item>
-        <ion-icon slot="start" name="person" size="small"></ion-icon>
+        <ion-icon slot="start" name="person" size="small" class="custom-icon"></ion-icon>
         <ion-label position="floating">E-mail</ion-label>
         <ion-input type="email" required></ion-input>
       </ion-item>
 
-      <ion-item>
-        <ion-icon slot="start" name="lock-closed" size="small"></ion-icon>
+      <ion-item >
+        <ion-icon slot="start" name="lock-closed" size="small" class="custom-icon"></ion-icon>
         <ion-label position="floating">Senha</ion-label>
         <ion-input type="password" required></ion-input>
       </ion-item>
-
-      <ion-button expand="full" color="primary" [routerLink]="['/tabs']">Login</ion-button>
+    </div>
+      <ion-button class="buttonL" expand="full" color="primary" [routerLink]="['/tabs']">Login</ion-button>
 
       <ion-button expand="full" color="light" [routerLink]="['/forgot-password']" fill="clear" size="small">Esqueceu a senha?</ion-button>
-    </div>
+
+      <ion-button expand="full" color="light" [routerLink]="['/cadastrar']" fill="clear" size="small">Cadastrar-se</ion-button>
   </div>
 </ion-content>
