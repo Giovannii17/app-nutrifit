@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+  <div class="ion-padding content">
+    <ion-img src="/assets/icon/Logo.png" alt="Logo" class="logo"></ion-img>
+
+    <div class="cadastro-container">
+      <ion-item>
+        <ion-icon slot="start" name="person" size="small" class="custom-icon"></ion-icon>
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input type="email" required></ion-input>
+      </ion-item>
+
+      <ion-item >
+        <ion-icon slot="start" name="lock-closed" size="small" class="custom-icon"></ion-icon>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input type="password" required></ion-input>
+      </ion-item>
+
+      <ion-item >
+        <ion-icon slot="start" name="lock-closed" size="small" class="custom-icon"></ion-icon>
+        <ion-label position="floating">Confirme a Senha</ion-label>
+        <ion-input type="password" required></ion-input>
+      </ion-item>
+      <ion-button class="buttonL" expand="full" color="primary" [routerLink]="['/tabs']">Cadastrar</ion-button>
+  </div>
+</div>
+</ion-content>
