@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-toolbar color="#001D20">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="#0E393E">
+  <div class="profile">
+    <ion-avatar class="avatar">
+      <img src="assets/avatar.png" />
+    </ion-avatar>
+  </div>
+<div class="attPerfil-container">
+   <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Altura</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Data Nascimento</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Sexo</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Objetivo</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+    <ion-row>
+        <ion-col size="12" class="ion-text-center">
+          <ion-button expand="block" class="update-button" color="dark">Atualizar peso</ion-button>
+    </ion-col>
+  </ion-row>
+<ion-title>DADOS DE ACESSO</ion-title>
+
+
+<div class="nivelTreino-container">
+  <h5 align="center">Niveis de Treino</h5>
+<ion-list>
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>
+        <h2>Leve</h2>
+        <p>Exercício leve, com cargas baixas e sem muito esforço cardiovascular.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>
+        <h2>Intermediário</h2>
+        <p>Rotina de treinos moderados com mais esforço e um pouco de cardio.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>
+        <h2>Avançado</h2>
+        <p>Treino de alta intensidade com cargas pesadas e exercícios avançados.</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</div>
+<h5 align="center">Nível diário de atividade</h5>
+
+  <ion-list>
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>
+        <h2>Sedentário</h2>
+        <p>Pouca atividade física no dia a dia.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>
+        <h2>Moderadamente ativo</h2>
+        <p>Exercício leve a moderado em algumas partes do dia.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>
+        <h2>Muito ativo</h2>
+        <p>Atividade física intensa durante a maior parte do dia.</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" class="save-button" color="dark">SALVAR</ion-button>
+</ion-content>

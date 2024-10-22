@@ -43,7 +43,7 @@ ion-tab-bar{
     font-weight: bold;
 }
 ion-toolbar{
-    background: none;
+    --background: none;
     background-color: #007aff;
     color: white;
     font-weight:bold;
@@ -52,4 +52,8 @@ ion-content{
     --background:none;
     background: linear-gradient(180deg, #0BB9CD 0%, #077986 23.5%, #000 100%);
     
+}
+ion-header {
+    --background:none;
+    background: #001D20;
 }

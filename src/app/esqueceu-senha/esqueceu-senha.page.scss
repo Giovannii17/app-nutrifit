@@ -1,0 +1,53 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recuperacao-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ion-item {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 0px solid #0088A6;
+    --background: none;
+    background: rgba(255, 255, 255, 0.23);
+    width: 100%;
+    max-width: 300px;
+}
+
+ion-input {
+    width: 100%;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.custom-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 10%;
+}
+
+.buttonL {
+    margin-top: 10%;
+    width: 208px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #0BB9CD;
+    width: 50%;
+}

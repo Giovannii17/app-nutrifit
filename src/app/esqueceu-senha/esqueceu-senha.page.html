@@ -2,7 +2,7 @@
   <div class="ion-padding content">
     <ion-img src="/assets/icon/Logo.png" alt="Logo" class="logo"></ion-img>
 
-    <div class="login-container">
+    <div class="recuperacao-container">
       <ion-item>
         <ion-icon slot="start" name="person" size="small" class="custom-icon"></ion-icon>
         <ion-label position="floating">E-mail</ion-label>
@@ -11,15 +11,16 @@
 
       <ion-item >
         <ion-icon slot="start" name="lock-closed" size="small" class="custom-icon"></ion-icon>
-        <ion-label position="floating">Senha</ion-label>
+        <ion-label position="floating">Senha Nova</ion-label>
         <ion-input type="password" required></ion-input>
       </ion-item>
-    </div>
-      <ion-button class="buttonL" expand="full" color="primary" [routerLink]="['/tabs']">Login</ion-button>
 
-      <ion-button expand="full" color="light" [routerLink]="['/esqueceu-senha']" fill="clear" size="small">Esqueceu a senha?</ion-button>
-
-      <ion-button expand="full" color="light" [routerLink]="['/cadastro']" fill="clear" size="small">Cadastrar-se</ion-button>
-
+      <ion-item >
+        <ion-icon slot="start" name="lock-closed" size="small" class="custom-icon"></ion-icon>
+        <ion-label position="floating">Codigo</ion-label>
+        <ion-input type="password" required></ion-input>
+      </ion-item>
+      <ion-button class="buttonL" expand="full" color="primary" [routerLink]="['/login']">Salvar</ion-button>
   </div>
+</div>
 </ion-content>
