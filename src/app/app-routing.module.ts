@@ -30,6 +30,10 @@ const routes: Routes = [
   },  {
     path: 'esqueceu-senha',
     loadChildren: () => import('./esqueceu-senha/esqueceu-senha.module').then( m => m.EsqueceuSenhaPageModule)
+  },
+  {
+    path: 'dieta',
+    loadChildren: () => import('./dieta/dieta.module').then( m => m.DietaPageModule)
   }
 
 
