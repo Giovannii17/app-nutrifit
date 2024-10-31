@@ -1,13 +1,67 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>dieta</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-app>
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">dieta</ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <div class="header">
+        <div class="svg-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="102" height="36" viewBox="0 0 102 36" fill="none">
+            <path d="M0.5 35.5H101.5V0.5H0.5V35.5Z" fill="#001D20" stroke="#0E393E"/>
+          </svg>
+          <img src="assets/icon/logoHeader.png" class="logo-image" />
+          <span class="logo-text">UTRIFIT</span>
+        </div>
+      </div>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="calendar"></ion-icon>
+          hoje
+        </ion-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
-</ion-content>
+
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Meta diária: 0000 Kcal</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-progress-bar value="0"></ion-progress-bar>
+        <p>Faltam: 0000 Kcal</p>
+        <ion-list>
+          <ion-item>
+            <ion-label>Consumidas</ion-label>
+            <ion-note slot="end">0.00</ion-note>
+          </ion-item>
+          <ion-item>
+            <ion-label>Carboidrato</ion-label>
+            <ion-note slot="end">0g / 000g</ion-note>
+          </ion-item>
+          <ion-item>
+            <ion-label>Proteína</ion-label>
+            <ion-note slot="end">0g / 000g</ion-note>
+          </ion-item>
+          <ion-item>
+            <ion-label>Gordura</ion-label>
+            <ion-note slot="end">0g / 000g</ion-note>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fibras</ion-label>
+            <ion-note slot="end">0.00</ion-note>
+          </ion-item>
+          <ion-item>
+            <ion-label>Sódio</ion-label>
+            <ion-note slot="end">0.00</ion-note>
+          </ion-item>
+        </ion-list>
+        <ion-item>
+          <ion-label>Água</ion-label>
+          <ion-input placeholder="0ml/0000ml"></ion-input>
+        </ion-item>
+        <ion-button expand="block">Adicionar</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-app>
