@@ -1,26 +1,30 @@
 <ion-content [fullscreen]="true">
   <div class="ion-padding content">
-    <ion-img src="/assets/icon/Logo.png" alt="Logo" class="logo"></ion-img>
-
+    <div class="circle-background">
+      <div class="logo-shapes">
+      <ion-img src="/assets/icon/logo.png" alt="Logo" class="logo"></ion-img>
+      </div>
+  </div>
     <div class="cadastro-container">
       <ion-item>
-        <ion-icon slot="start" name="person" size="small" class="custom-icon"></ion-icon>
+        <ion-img slot="start" src="assets/icon/user.png" alt="User Icon" class="custom-icon"></ion-img>
         <ion-label position="floating">E-mail</ion-label>
         <ion-input type="email" required></ion-input>
       </ion-item>
 
       <ion-item >
-        <ion-icon slot="start" name="lock-closed" size="small" class="custom-icon"></ion-icon>
+        <ion-img slot="start" src="assets/icon/lock.png" alt="Lock Icon" class="custom-icon"></ion-img>
         <ion-label position="floating">Senha</ion-label>
         <ion-input type="password" required></ion-input>
       </ion-item>
 
       <ion-item >
-        <ion-icon slot="start" name="lock-closed" size="small" class="custom-icon"></ion-icon>
+        <ion-img slot="start" src="assets/icon/lock.png" alt="Lock Icon" class="custom-icon"></ion-img>
         <ion-label position="floating">Confirme a Senha</ion-label>
         <ion-input type="password" required></ion-input>
       </ion-item>
-      <ion-button class="buttonL" expand="full" color="primary" [routerLink]="['/login']">Cadastrar</ion-button>
+      <ion-button class="buttonL" expand="full" [routerLink]="['/edit-perfil']">Cadastrar</ion-button>
+      <ion-button expand="full" color="light" [routerLink]="['/login']" fill="clear" size="small">Ja Possuo</ion-button>
   </div>
 </div>
 </ion-content>

@@ -1,17 +1,15 @@
 <ion-header>
   <ion-toolbar color="#001D20">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
+      <ion-back-button defaultHref="/" text=""></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding" color="#0E393E">
-  <div class="profile">
-    <ion-avatar class="avatar">
-      <img src="assets/avatar.png" />
-    </ion-avatar>
-  </div>
+  <div class="profile">   
+      <img src="assets/icon/teste23.png" class="circulo-background"/></div>
+  
 <div class="attPerfil-container">
    <ion-item>
     <ion-label position="floating">Nome</ion-label>
@@ -53,12 +51,13 @@
           <ion-button expand="block" class="update-button" color="dark">Atualizar peso</ion-button>
     </ion-col>
   </ion-row>
-<ion-title>DADOS DE ACESSO</ion-title>
+
 
 
 <div class="nivelTreino-container">
-  <h5 align="center">Niveis de Treino</h5>
-<ion-list>
+  <ion-title>DADOS DE ACESSO</ion-title>
+  <h5 align="left">Niveis de Treino</h5>
+
     <ion-item>
       <ion-checkbox slot="start"></ion-checkbox>
       <ion-label>
@@ -82,11 +81,9 @@
         <p>Treino de alta intensidade com cargas pesadas e exercícios avançados.</p>
       </ion-label>
     </ion-item>
-  </ion-list>
-</div>
-<h5 align="center">Nível diário de atividade</h5>
 
-  <ion-list>
+
+<h5 align="left">Nível diário de atividade</h5>
     <ion-item>
       <ion-checkbox slot="start"></ion-checkbox>
       <ion-label>
@@ -110,7 +107,6 @@
         <p>Atividade física intensa durante a maior parte do dia.</p>
       </ion-label>
     </ion-item>
-  </ion-list>
-
+</div>
   <ion-button expand="block" class="save-button" color="dark">SALVAR</ion-button>
 </ion-content>
