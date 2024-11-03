@@ -58,23 +58,38 @@ ion-header {
   }
   
   ion-card-title {
+    color:white;
     font-size: 1.2em;
     font-weight: bold;
   }
   
-  ion-progress-bar {
+.progress-bar-1{
     --progress-background: #4caf50;
-    --background: #555555;
-    height: 20px;
     margin: 10px 0;
+    width: 100%;
+    height: 70%;
+    flex-shrink: 0;
+    border-radius: 100px;
+    --background: #284245;  
+  }
+.progress-bar-2{
+    --progress-background: #4caf50;
+    margin: 10px 0;
+    width: 60%;
+    height: 50%;
+    flex-shrink: 0;
+    border-radius: 100px;
+    --background: #284245;  
   }
   
   ion-list {
+    --background:none;
+    background: #001D20;
     margin-top: 10px;
   }
   
   ion-item {
-    --background: #333333;
+    --background: #001D20;
     --color: #ffffff;
   }
   
@@ -85,5 +100,8 @@ ion-header {
   ion-note {
     font-size: 1em;
     color: #ffffff;
+  }
+  ion-content{
+    --background:#001D20;
   }
   
