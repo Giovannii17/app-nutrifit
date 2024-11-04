@@ -6,23 +6,21 @@
       </ion-buttons>
       <div class="header">
         <div class="svg-container">
+          <img src="assets/icon/logoHeader.png" class="logo-image" />
           <svg xmlns="http://www.w3.org/2000/svg" width="102" height="36" viewBox="0 0 102 36" fill="none">
             <path d="M0.5 35.5H101.5V0.5H0.5V35.5Z" fill="#001D20" stroke="#0E393E"/>
           </svg>
-          <img src="assets/icon/logoHeader.png" class="logo-image" />
-          <span class="logo-text">UTRIFIT</span>
+          
         </div>
       </div>
       <ion-buttons slot="end">
         <ion-button>
-          <ion-icon name="calendar"></ion-icon>
-          hoje
+          <ion-icon name="calendar-clear-outline" color="light"></ion-icon>
         </ion-button>
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
-
-  <ion-content>
+  <ion-content class="inicio">
     <ion-card>
       <ion-card-header>
         <ion-card-title>Meta diária: 0000 Kcal</ion-card-title>
@@ -34,24 +32,167 @@
         <p>Faltam: 0000 Kcal</p>
         <ion-list>
           <ion-item>
-            <ion-label>Carboidrato</ion-label>
-            <ion-progress-bar class="progress-bar-2" value="0">0g / 000g</ion-progress-bar>
+            <ion-label>Carboidratos</ion-label>
+            <ion-progress-bar class="progress-bar-2" value="0"></ion-progress-bar>
+            <ion-note slot="end">0g / 000g</ion-note>
           </ion-item>
           <ion-item>
-            <ion-label>Proteína</ion-label>
-            <ion-progress-bar class="progress-bar-2" value="0">0g / 000g</ion-progress-bar>
+            <ion-label>Proteínas</ion-label>
+            <ion-progress-bar class="progress-bar-2" value="0"></ion-progress-bar>
+            <ion-note slot="end">0g / 000g</ion-note>
           </ion-item>
           <ion-item>
-            <ion-label>Gordura</ion-label>
-            <ion-progress-bar class="progress-bar-2" value="0">0g / 000g</ion-progress-bar>
+            <ion-label>Gorduras</ion-label>
+            <ion-progress-bar class="progress-bar-2" value="0"></ion-progress-bar>
+            <ion-note slot="end">0g / 000g</ion-note>
           </ion-item>
         </ion-list>
-        <ion-item>
-          <ion-label>Água</ion-label>
-          <ion-input placeholder="0ml/0000ml"></ion-input>
-        </ion-item>
-        <ion-button expand="block">Adicionar</ion-button>
-      </ion-card-content>
+      </ion-card-content> 
     </ion-card>
+     <div class="meio">
+      <ion-item>
+        <ion-progress-bar class="progress-bar-3" value="0"></ion-progress-bar>
+      </ion-item>
+      <ion-item>
+        <ion-label class="meio-text">Água</ion-label>
+        <ion-input placeholder="0ml / 0000ml" class="meio-text" style="flex: 1.4;"></ion-input>
+        <ion-button fill="outline" class="meio-text">Adicionar</ion-button>
+      </ion-item>
+        <ion-segment value="dieta">
+          <ion-segment-button value="dieta">
+            <ion-label>Minha dieta</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="medicamentos">
+            <ion-label>Meus Medicamentos</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+        <ion-card class="container-alimentos">
+          <ion-card-header>
+            <ion-item>
+              <ion-label class="meio-text">Café da Manhã</ion-label>
+              <ion-label class="meio-text2">08:00</ion-label>
+              <ion-label fill="outline" class="textAlimentos">0 Kcal</ion-label>
+            </ion-item>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <div class="textNutrientes">
+                <ion-col>
+                  <ion-label>Carb</ion-label>
+                  <ion-badge>0g</ion-badge>
+                </ion-col>
+                <ion-col >
+                  <ion-label>Prot</ion-label>
+                  <ion-badge>0g</ion-badge>
+                </ion-col>
+                <ion-col>
+                  <ion-label>Gor</ion-label>
+                  <ion-badge>0g</ion-badge>
+                </ion-col>
+              </div>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+      </ion-card> 
+      <ion-button class="container-alimentosButton1" expand="block">Adicionar alimento</ion-button>
+      <ion-button class="container-alimentosButton2" expand="block">Editar refeição</ion-button>
+      <ion-card class="container-alimentos">
+        <ion-card-header>
+          <ion-item>
+            <ion-label class="meio-text">Almoço</ion-label>
+            <ion-label class="meio-text2">12:00</ion-label>
+            <ion-label fill="outline" class="textAlimentos">0 Kcal</ion-label>
+          </ion-item>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <div class="textNutrientes">
+              <ion-col>
+                <ion-label>Carb</ion-label>
+                <ion-badge>0g</ion-badge>
+              </ion-col>
+              <ion-col >
+                <ion-label>Prot</ion-label>
+                <ion-badge>0g</ion-badge>
+              </ion-col>
+              <ion-col>
+                <ion-label>Gor</ion-label>
+                <ion-badge>0g</ion-badge>
+              </ion-col>
+            </div>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+    </ion-card>
+    <ion-button class="container-alimentosButton1" expand="block">Adicionar alimento</ion-button>
+    <ion-button class="container-alimentosButton2" expand="block">Editar refeição</ion-button>
+      <ion-card class="container-alimentos">
+          <ion-card-header>
+            <ion-item>
+              <ion-label class="meio-text">Café da Tarde</ion-label>
+              <ion-label class="meio-text2">16:00</ion-label>
+              <ion-label fill="outline" class="textAlimentos">0 Kcal</ion-label>
+            </ion-item>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <div class="textNutrientes">
+                <ion-col>
+                  <ion-label>Carb</ion-label>
+                  <ion-badge>0g</ion-badge>
+                </ion-col>
+                <ion-col >
+                  <ion-label>Prot</ion-label>
+                  <ion-badge>0g</ion-badge>
+                </ion-col>
+                <ion-col>
+                  <ion-label>Gor</ion-label>
+                  <ion-badge>0g</ion-badge>
+                </ion-col>
+              </div>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+    </ion-card> 
+    <ion-button class="container-alimentosButton1" expand="block">Adicionar alimento</ion-button>
+    <ion-button class="container-alimentosButton2" expand="block">Editar refeição</ion-button>
+      <ion-card class="container-alimentos">
+        <ion-card-header>
+          <ion-item>
+            <ion-label class="meio-text">Jantar</ion-label>
+            <ion-label class="meio-text2">20:00</ion-label>
+            <ion-label fill="outline" class="textAlimentos">0 Kcal</ion-label>
+          </ion-item>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <div class="textNutrientes">
+              <ion-col>
+                <ion-label>Carb</ion-label>
+                <ion-badge>0g</ion-badge>
+              </ion-col>
+              <ion-col >
+                <ion-label>Prot</ion-label>
+                <ion-badge>0g</ion-badge>
+              </ion-col>
+              <ion-col>
+                <ion-label>Gor</ion-label>
+                <ion-badge>0g</ion-badge>
+              </ion-col>
+            </div>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+    </ion-card> 
+    <ion-button class="container-alimentosButton1" expand="block">Adicionar alimento</ion-button>
+    <ion-button class="container-alimentosButton2" expand="block">Editar refeição</ion-button>       
+    </div>
   </ion-content>
+  
 </ion-app>
+
+

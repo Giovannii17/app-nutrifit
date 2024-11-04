@@ -16,7 +16,8 @@
 .circle-background {
     margin-bottom: 20%;
     width: 40%;
-    height: 18%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Mantém a proporção 1:1 */
     flex-shrink: 0;
     background-color: black;
     border-radius: 50%;
@@ -24,7 +25,8 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.2); 
-  }
+}
+
 .login-container {
     width: 100%;
     height: 25%;
@@ -56,6 +58,7 @@ ion-input {
     height: 10%;
     flex-shrink: 0;
     margin-top: 8%;
+    max-width: 10%;
   }
 .buttonL{
     --background:none;
@@ -65,3 +68,4 @@ ion-input {
     border-radius: 10px;
     background: #0BB9CD;
 }
+
