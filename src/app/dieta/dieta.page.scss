@@ -44,6 +44,7 @@ ion-header {
     width: 100%;
     border-radius:0px;
     margin: 0px;
+    margin-bottom: 5%;
   }
   
   ion-card-title {
@@ -131,7 +132,6 @@ ion-header {
     width: 90%;
     height: 9%;
     margin-left: 5%;
-    margin-top: 10%;
     position: absolute;
     border-radius: 10px;
     border: 1px solid #0E393E;
@@ -142,6 +142,7 @@ ion-header {
     margin-top: -4%;
   }
   .meio-text2{
+    margin-left: 2%;
     margin-top: -4%;
     color:#999;
   }
@@ -161,19 +162,16 @@ ion-header {
 .container-alimentosButton1{
   width: 50%;
   height: 20%;
-  margin-top: -0.2%;
-  flex-shrink: 0;
   border: 1px solid #001D20;
-  background: #003339;
+
 }
 .container-alimentosButton2{
-  margin-top: -14%;
-  margin-left: 49.5%;
+  margin-left: 49.8%;
   width: 50%;
   height: 20%;
-  flex-shrink: 0;
-  border: 1px solid #001D20;
-  background: #003339;
+  margin-top: -13.9%;
+  border: 0.5px solid #001D20;
+  --background:none;
 }
 .textAlimentos{
   margin-top: -4%;
@@ -195,5 +193,7 @@ ion-badge{
   background: #0E393E;
   }
 ion-button{
+  background: #003339;
   --background:none;
+  margin-top: -5%;
 }

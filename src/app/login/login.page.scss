@@ -1,9 +1,10 @@
 .content {
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100%; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Para ocupar a altura total da viewport */
+    padding-bottom: 10px; /* Espaço extra para evitar sobreposição do teclado */
 }
 
 .logo {
@@ -16,7 +17,7 @@
 .circle-background {
     margin-bottom: 20%;
     width: 40%;
-    height: auto;
+    height: 18%;
     aspect-ratio: 1 / 1; /* Mantém a proporção 1:1 */
     flex-shrink: 0;
     background-color: black;

@@ -3,9 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 100vh; /* Para ocupar a altura total da viewport */
+    padding-bottom: 10px; /* Espaço extra para evitar sobreposição do teclado */
 }
-
 .logo {
     margin-left: -3%;
     margin-top: 30%;
@@ -17,6 +17,7 @@
     margin-bottom: 20%;
     width: 40%;
     height: 18%;
+    aspect-ratio: 1 / 1; /* Mantém a proporção 1:1 */
     flex-shrink: 0;
     background-color: black;
     border-radius: 50%;
@@ -24,7 +25,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.2); 
-  }
+}
 
 .cadastro-container {
     width: 100%;
@@ -66,4 +67,15 @@ ion-input {
     flex-shrink: 0;
     border-radius: 10px;
     background: #0BB9CD;
+}
+@media (max-height: 600px) {
+    .circle-background {
+        width: 30%; /* Reduz a largura da logo */
+        height: 15%; /* Reduz a altura da logo */
+        transform: scale(0.85); /* Reduz ainda mais quando necessário */
+    }
+
+    .content {
+        padding-top: 5%; /* Espaço extra no topo para evitar sobreposição */
+    }
 }

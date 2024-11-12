@@ -1,62 +1,64 @@
 <ion-header>
   <ion-toolbar color="#001D20">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/" text=""></ion-back-button>
+      <ion-back-button defaultHref="/cadastro" text=""></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding" color="#0E393E">
   <div class="profile">   
-      <img src="assets/icon/teste23.png" class="circulo-background"/></div>
-  
-<div class="attPerfil-container">
-   <ion-item>
-    <ion-label position="floating">Nome</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <ion-item>
-          <ion-label position="floating">Altura</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col>
-        <ion-item>
-          <ion-label position="floating">Data Nascimento</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <ion-item>
-          <ion-label position="floating">Sexo</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col>
-        <ion-item>
-          <ion-label position="floating">Objetivo</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</div>
-    <ion-row>
-        <ion-col size="12" class="ion-text-center">
-          <ion-button expand="block" class="update-button">Atualizar peso</ion-button>
+    <img src="assets/icon/teste23.png" class="circulo-background"/>
+  </div>
+
+  <div class="attPerfil-container">
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Altura</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Data Nascimento</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Sexo</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Objetivo</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <ion-row>
+    <ion-col size="12" class="ion-text-center">
+      <ion-button expand="block" class="update-button">Atualizar peso</ion-button>
     </ion-col>
   </ion-row>
 
-<ion-title>DADOS DE ACESSO</ion-title>
-<div class="nivelTreino-container">
+  <!-- Mover o ion-title aqui -->
+  <ion-title>DADOS DE ACESSO</ion-title>
   
-  <h5 align="left">Niveis de Treino</h5>
-
+  <div class="nivelTreino-container">
+    <h5 align="left">Níveis de Treino</h5>
     <ion-item>
       <ion-checkbox slot="start"></ion-checkbox>
       <ion-label>
@@ -81,8 +83,7 @@
       </ion-label>
     </ion-item>
 
-
-<h5 align="left">Nível diário de atividade</h5>
+    <h5 align="left">Nível diário de atividade</h5>
     <ion-item>
       <ion-checkbox slot="start"></ion-checkbox>
       <ion-label>
@@ -106,6 +107,7 @@
         <p>Atividade física intensa durante a maior parte do dia.</p>
       </ion-label>
     </ion-item>
-</div>
+  </div>
+
   <ion-button expand="block" class="save-button">SALVAR</ion-button>
 </ion-content>
