@@ -68,7 +68,7 @@ ion-icon {
     background: #284245;
     color: white;
     height: 2em; /* Altura igual à dos rótulos */
-    font-size: 0.5rem; /* Tamanho do texto proporcional */
+    font-size: 0.8rem; /* Tamanho do texto proporcional */
     padding: 0 1em; /* Espaço interno ajustável */
     display: flex;
     align-items: center; /* Centraliza o texto verticalmente */
@@ -81,12 +81,13 @@ ion-icon {
     border: 0.5px solid #284245;
     background: #284245;
     color: white;
-    height: 2em; /* Altura igual à dos rótulos */
-    font-size: 0.5rem; /* Tamanho do texto proporcional */
-    padding: 0 1em; /* Espaço interno ajustável */
+    height: 80%; 
+    font-size: 20px; 
+    padding: 0 1em; 
     display: flex;
     align-items: center; /* Centraliza o texto verticalmente */
-    margin-top: 30%;
+    margin-top: 2%;
+
   }
 
 .container-text {
@@ -157,7 +158,12 @@ ion-input {
   transform: translateX(-50%);
   z-index: 10; /* Garante que a imagem fique acima da container */
 }
-
+ion-button{
+  background: #003339;
+  --background:none;
+  margin-top: -5%;
+  
+}
 
 
 @media (max-width: 768px) {

@@ -4,34 +4,38 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'dieta',
+        loadChildren: () => import('../dieta/dieta.module').then(m => m.DietaPageModule),
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'treino',
+        loadChildren: () => import('../treino/treino.module').then(m => m.TreinoPageModule),
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'perfil',
+        loadChildren: () => import('../perfil/perfil.module').then(m => m.PerfilPageModule),
+      },
+      {
+        path: 'treinocasa',
+        loadChildren: () => import('../treinocasa/treinocasa.module').then(m => m.TreinocasaPageModule),
+      },
+      {
+        path: 'exercicios',
+        loadChildren: () => import('../exercicios/exercicios.module').then(m => m.ExerciciosPageModule),
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
-        pathMatch: 'full'
-      }
-    ]
+        redirectTo: '/tabs/dieta',
+        pathMatch: 'full',
+      },
+    ],
   },
-  {
-    path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full'
-  }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

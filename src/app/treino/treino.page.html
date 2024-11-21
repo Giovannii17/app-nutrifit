@@ -12,11 +12,6 @@
           </svg>
         </div>
       </div>
-      <ion-buttons slot="end">
-        <ion-button>
-          <ion-icon name="calendar-clear-outline"></ion-icon>
-        </ion-button>
-      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
@@ -29,10 +24,10 @@
         <ion-button expand="block" class="nav-button">Minha Ficha</ion-button>
       </ion-buttons>
       <ion-buttons slot="start">
-        <ion-button expand="block" class="nav-button">Exercícios</ion-button>
+        <ion-button expand="block" class="nav-button" [routerLink]="['/tabs/exercicios']">Exercícios</ion-button>
       </ion-buttons>
       <ion-buttons slot="start">
-        <ion-button expand="block" class="nav-button">Em Casa</ion-button>
+        <ion-button expand="block" class="nav-button" [routerLink]="['/tabs/treinocasa']">Em Casa</ion-button>
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
@@ -79,25 +74,16 @@
         </ion-chip>
       </div>
       
-      <swiper-container (slidechange)="swiperSlideChanged($event)" [loop]="true" [pagination]="true">
+      <swiper-container [loop]="true" [slidesPerView]="1">
         <swiper-slide>
-      <div class="image-row">
-        <ion-card class="custom-card">
-          <img src="assets/treino1.png" alt="Treino 1" />
-        </ion-card>
-      </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="image-row">
-        <ion-card class="custom-card">
-          <img src="assets/treino2.png" class="img2" alt="Treino 2" />
-        </ion-card>
-      </div>
-    </swiper-slide>
+            <img src="assets/treino1.png" alt="Slide 1">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="assets/treino2.png" alt="Slide 2">
+        </swiper-slide>
     </swiper-container>
-
-     
-
+    
+        <ion-button class="botao-treinar" expand="block">Treinar</ion-button>
     </div>
   </ion-content>
 </ion-app>

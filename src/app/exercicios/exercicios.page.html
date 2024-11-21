@@ -1,0 +1,94 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <div class="header">
+        <div class="svg-container">
+          <img src="assets/icon/logoHeader.png" class="logo-image" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="102" height="36" viewBox="0 0 102 36" fill="none">
+            <path d="M0.5 35.5H101.5V0.5H0.5V35.5Z" fill="#001D20" stroke="#0E393E"/>
+          </svg>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-header>
+    <ion-toolbar class="custom-toolbar">
+      <ion-buttons slot="start">
+        <ion-button expand="block" class="nav-button">Treino</ion-button>
+      </ion-buttons>
+      <ion-buttons slot="start">
+        <ion-button expand="block" class="nav-button">Minha Ficha</ion-button>
+      </ion-buttons>
+      <ion-buttons slot="start">
+        <ion-button expand="block" class="nav-button" [routerLink]="['/tabs/exercicios']">Exercícios</ion-button>
+      </ion-buttons>
+      <ion-buttons slot="start">
+        <ion-button expand="block" class="nav-button" [routerLink]="['/tabs/treinocasa']">Em Casa</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+        <ion-content class="inicio">
+            <ion-searchbar placeholder="Pesquisar"></ion-searchbar>
+            <div class="labels-container">
+                <ion-label>Peito</ion-label>
+                <ion-label>Costas</ion-label>
+                <ion-label>Biceps</ion-label>
+                <ion-label>Triceps</ion-label>
+                <ion-label>Ombros</ion-label>
+                <ion-label>Perna</ion-label>
+                <ion-label>Abdom</ion-label>
+            </div>
+            <div class="card">
+                <img src="../assets/icon/peito.png" alt="Peito">
+                <div class="card-content">
+                    <h2>Supino Reto Com Barra</h2>        
+                  </div>  
+                    <ion-button expand="block" class="buttonT">Adicionar</ion-button>                
+            </div>
+            <div class="card">
+              <img src="../assets/icon/peito.png" alt="Peito">
+              <div class="card-content">
+                  <h2>Supino Inclinado Com Barra</h2>          
+                </div>
+                <ion-button expand="block" class="buttonT">Adicionar</ion-button>
+            </div>
+          <div class="card">
+            <img src="../assets/icon/peito.png" alt="Peito">
+            <div class="card-content">
+                <h2>Rosca Simultanea Com Barra</h2>        
+              </div>
+              <ion-button expand="block" class="buttonT">Adicionar</ion-button>
+          </div>
+        <div class="card">
+          <img src="../assets/icon/peito.png" alt="Peito">
+          <div class="card-content">
+              <h2>Rosca Martelo Com Halter</h2>      
+            </div>
+            <ion-button expand="block" class="buttonT">Adicionar</ion-button>
+        </div>
+      <div class="card">
+        <img src="../assets/icon/peito.png" alt="Peito">
+        <div class="card-content">
+            <h2>Elevação Lateral Com Halter</h2>   
+          </div>
+          <ion-button expand="block" class="buttonT">Adicionar</ion-button>
+      </div>
+    <div class="card">
+      <img src="../assets/icon/peito.png" alt="Peito">
+      <div class="card-content">
+          <h2>Elevação Frontal Com Halter</h2>  
+        </div>
+        <ion-button expand="block" class="buttonT">Adicionar</ion-button>
+    </div>
+  <div class="card">
+    <img src="../assets/icon/peito.png" alt="Peito">
+    <div class="card-content">
+        <h2>Trapézio Com Halter</h2>
+      </div>
+    <ion-button expand="block" class="buttonT">Adicionar</ion-button>
+</div>
+        </ion-content>
+    </ion-app>

@@ -215,15 +215,13 @@ ion-button{
 .container-alimentosButton1{
     width: 48%;
     height: 20%;
-    border: 1px solid #001D20;
     background: #001D20;
 }
 .container-alimentosButton2{
     margin-left: 50.5%;
     width: 49%;
     height: 20%;
-    margin-top: -13.9%;
-    border: 0.5px solid #001D20;
+    margin-top: -10.3%;
     background: #001D20;
 }
 .progress-bar-1{
@@ -283,30 +281,34 @@ p {
         gap: 15px; 
       }
       
-      .custom-card {
-        flex: none;
-        width: 48%; 
-        height: 200px; 
-        overflow: hidden;
-        border-radius: 10px;
-      
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 10px;
-        }
-      }
 
       swiper-container {
         width: 100%;
-        height: 100%;
+        height: 430%;
       }
 
       swiper-slide {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: center;        
+      img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
       }
+      .botao-treinar {
+        margin-top: 10%;
+        color: #ffffff; /* Cor do texto */
+        border-radius: 50px; /* Borda arredondada */
+        box-shadow: 0 0 10px #24a6a6; /* Efeito de brilho ao redor */
+        padding: 10px 20px; /* Ajuste de espaçamento interno */
+        font-size: 16px; /* Tamanho do texto */
+        text-transform: uppercase; /* Texto em maiúsculas */
+        font-weight: bold; /* Texto em negrito */
+        transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animações suaves */
+      }      
+
       
