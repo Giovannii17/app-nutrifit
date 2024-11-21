@@ -10,7 +10,6 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="102" height="36" viewBox="0 0 102 36" fill="none">
             <path d="M0.5 35.5H101.5V0.5H0.5V35.5Z" fill="#001D20" stroke="#0E393E"/>
           </svg>
-          
         </div>
       </div>
       <ion-buttons slot="end">
@@ -20,16 +19,45 @@
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
+  
   <ion-content class="inicio">
-        <div class="container">
-          <ion-item>
-          <ion-label class="container-idadetext" position="floating">IDADE:</ion-label>
-          <ion-input class="container-idadeinput" type="text">.</ion-input>
-          </ion-item>
-      </div>  
+ 
+    <div class="container">
+      <ion-img src="assets/icon/avatar-background.png" alt="Avatar Icon" class="custom-icon"></ion-img>
+      <ion-img src="assets/icon/avatar.png" alt="Avatar Icon" class="custom-icon"></ion-img>
+      <ion-item class="input-item">
+        <ion-input class="container-inputname" placeholder="SEU NOME"></ion-input>
+      </ion-item>
+      <!-- Caixa para IDADE -->
+      <ion-item class="input-item">
+        <ion-label class="container-text" position="floating">IDADE:</ion-label>
+        <ion-input class="container-input" type="text"></ion-input>
+      </ion-item>
+      
+      <!-- Caixa para DIETA -->
+      <ion-item class="input-item">
+        <ion-label class="container-text" position="floating">DIETA:</ion-label>
+        <ion-input class="container-input" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item class="input-item">
+        <ion-label class="container-text" position="floating">OBJETIVO:</ion-label>
+        <ion-input class="container-input" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item class="input-item">
+        <ion-label class="container-text" position="floating">NIVEL DE ATIVIDADE:</ion-label>
+        <ion-input class="container-input" type="text"></ion-input>
+      </ion-item>
+      
+      <ion-item class="input-item">
+        <ion-label class="container-text" position="floating">ALTURA:</ion-label>
+        <ion-input class="container-input" type="text"></ion-input>
+      </ion-item>
+      
+      <ion-item class="input-item">
+        <ion-button class="container-inputname" placeholder="EDITAR"></ion-button>
+      </ion-item>
+    </div>  
   </ion-content>  
 </ion-app>
-
-
-
-
