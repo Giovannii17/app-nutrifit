@@ -19,6 +19,7 @@
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
+
   <ion-header>
     <ion-toolbar class="custom-toolbar">
       <ion-buttons slot="start">
@@ -35,13 +36,15 @@
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
+
   <ion-content class="inicio">
-     <div class="meio">
-        <ion-card class="container-alimentos">
-            <ion-item>
-              <ion-label class="meio-text">Calendário De Treino</ion-label>
-            </ion-item>
-      </ion-card> 
+    <div class="meio">
+      <ion-card class="container-alimentos">
+        <ion-item>
+          <ion-label class="meio-text">Calendário De Treino</ion-label>
+        </ion-item>
+      </ion-card>
+
       <div class="dias-semana">
         <div class="dia">Dom</div>
         <div class="dia">Seg</div>
@@ -51,17 +54,20 @@
         <div class="dia">Sex</div>
         <div class="dia">Sáb</div>
       </div>
-      <ion-card class="container-alimentos2">
-          <ion-item>
-            <ion-label class="meio-text2">Meta de Gasto Calórico</ion-label>
-          </ion-item>  
 
-    </ion-card> 
+      <ion-card class="container-alimentos2">
+        <ion-item>
+          <ion-label class="meio-text2">Meta de Gasto Calórico</ion-label>
+        </ion-item>
+      </ion-card>
+
       <ion-card class="container-alimentos3">
-            <ion-progress-bar class="progress-bar-1" value="0"></ion-progress-bar>
-          </ion-card> 
-    <ion-button class="container-alimentosButton1" expand="block">Meta</ion-button>
-    <ion-button class="container-alimentosButton2" expand="block">Histórico</ion-button> 
+        <ion-progress-bar class="progress-bar-1" value="0"></ion-progress-bar>
+      </ion-card>
+
+      <ion-button class="container-alimentosButton1" expand="block">Meta</ion-button>
+      <ion-button class="container-alimentosButton2" expand="block">Histórico</ion-button>
+
       <h2 class="section-title" align="center">Fichas De Treinos Prontas</h2>
       <div class="tags-container">
         <p>tipos:</p>
@@ -71,23 +77,27 @@
         <ion-chip class="custom-chip">
           <ion-label>treino</ion-label>
         </ion-chip>
-      </div>  
+      </div>
+      
+      <swiper-container (slidechange)="swiperSlideChanged($event)" [loop]="true" [pagination]="true">
+        <swiper-slide>
+      <div class="image-row">
+        <ion-card class="custom-card">
+          <img src="assets/treino1.png" alt="Treino 1" />
+        </ion-card>
+      </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="image-row">
+        <ion-card class="custom-card">
+          <img src="assets/treino2.png" class="img2" alt="Treino 2" />
+        </ion-card>
+      </div>
+    </swiper-slide>
+    </swiper-container>
+
      
- 
-  <div>
-    <div class="image-row">
-      <ion-card class="custom-card">
-        <img src="assets/treino1.png" alt="Treino 1" />
-      </ion-card>
-      <ion-card class="custom-card">
-        <img src="assets/treino2.png" class="img2" alt="Treino 2" />
-      </ion-card>
+
     </div>
-  </div>
-</div>
-</ion-content> 
-  
+  </ion-content>
 </ion-app>
-
-
-
