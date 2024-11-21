@@ -1,0 +1,93 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <div class="header">
+        <div class="svg-container">
+          <img src="assets/icon/logoHeader.png" class="logo-image" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="102" height="36" viewBox="0 0 102 36" fill="none">
+            <path d="M0.5 35.5H101.5V0.5H0.5V35.5Z" fill="#001D20" stroke="#0E393E"/>
+          </svg>
+        </div>
+      </div>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="calendar-clear-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-header>
+    <ion-toolbar class="custom-toolbar">
+      <ion-buttons slot="start">
+        <ion-button expand="block" class="nav-button">Treino</ion-button>
+      </ion-buttons>
+      <ion-buttons slot="start">
+        <ion-button expand="block" class="nav-button">Minha Ficha</ion-button>
+      </ion-buttons>
+      <ion-buttons slot="start">
+        <ion-button expand="block" class="nav-button">Exercícios</ion-button>
+      </ion-buttons>
+      <ion-buttons slot="start">
+        <ion-button expand="block" class="nav-button">Em Casa</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="inicio">
+     <div class="meio">
+        <ion-card class="container-alimentos">
+            <ion-item>
+              <ion-label class="meio-text">Calendário De Treino</ion-label>
+            </ion-item>
+      </ion-card> 
+      <div class="dias-semana">
+        <div class="dia">Dom</div>
+        <div class="dia">Seg</div>
+        <div class="dia">Ter</div>
+        <div class="dia">Qua</div>
+        <div class="dia">Qui</div>
+        <div class="dia">Sex</div>
+        <div class="dia">Sáb</div>
+      </div>
+      <ion-card class="container-alimentos2">
+          <ion-item>
+            <ion-label class="meio-text2">Meta de Gasto Calórico</ion-label>
+          </ion-item>  
+
+    </ion-card> 
+      <ion-card class="container-alimentos3">
+            <ion-progress-bar class="progress-bar-1" value="0"></ion-progress-bar>
+          </ion-card> 
+    <ion-button class="container-alimentosButton1" expand="block">Meta</ion-button>
+    <ion-button class="container-alimentosButton2" expand="block">Histórico</ion-button> 
+      <h2 class="section-title" align="center">Fichas De Treinos Prontas</h2>
+      <div class="tags-container">
+        <p>tipos:</p>
+        <ion-chip class="custom-chip">
+          <ion-label>nível</ion-label>
+        </ion-chip>
+        <ion-chip class="custom-chip">
+          <ion-label>treino</ion-label>
+        </ion-chip>
+      </div>  
+     
+ 
+  <div>
+    <div class="image-row">
+      <ion-card class="custom-card">
+        <img src="assets/treino1.png" alt="Treino 1" />
+      </ion-card>
+      <ion-card class="custom-card">
+        <img src="assets/treino2.png" class="img2" alt="Treino 2" />
+      </ion-card>
+    </div>
+  </div>
+</div>
+</ion-content> 
+  
+</ion-app>
+
+
+

@@ -158,6 +158,7 @@ ion-header {
   border-radius: 10px 10px 0px 0px;
   border: 1px solid #0E393E;
   background: #001D20;
+  margin-bottom: 2%;
 }
 .container-alimentosButton1{
   width: 50%;
@@ -196,4 +197,9 @@ ion-button{
   background: #003339;
   --background:none;
   margin-top: -5%;
+}
+ion-button:hover{
+  background: #003339;
+  --background:none;
+  border-radius: 0px 0px 0px 0px;
 }

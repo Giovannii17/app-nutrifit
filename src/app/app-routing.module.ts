@@ -34,6 +34,14 @@ const routes: Routes = [
   {
     path: 'dieta',
     loadChildren: () => import('./dieta/dieta.module').then( m => m.DietaPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'treino',
+    loadChildren: () => import('./treino/treino.module').then( m => m.TreinoPageModule)
   }
 
 
