@@ -1,6 +1,6 @@
 ion-tab-bar {
-  background-color: #f8f8f8; /* Cor do fundo das abas */
-  border-top: 1px solid #e0e0e0; /* Linha de separação */
+  background-color: #1E1E1E; /* Cor do fundo das abas */
+  border-top: 1px solid #1E1E1E; /* Linha de separação */
 }
 
 ion-tab-button {
@@ -8,5 +8,5 @@ ion-tab-button {
 }
 
 ion-tab-button[aria-selected="true"] {
-  color: #24A6A6; /* Cor ao selecionar a aba */
+  color: #24A6A6; 
 }

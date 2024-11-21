@@ -44,12 +44,11 @@ ion-icon {
 }
 
 .container {
-  margin-top: 30%;
+  margin-top: 20%;
   margin-left: 10%;
   width: 80%;
   height: auto;
   background-color: #001D20;
-  border-radius: 10px;
 }
 
 .input-item {
@@ -90,24 +89,23 @@ ion-icon {
 
   }
 
-.container-text {
-  width: 45%; /* Espaço para o rótulo */
-  color: white;
-  background: #284245;
-  padding: 10px; /* Espaço interno ajustável */
-  border-radius: 5px 5px 5px 5px;
-  height: 3em; /* Altura ajustável com base no texto */
-  display: flex;
-  align-items: center; /* Centraliza o texto verticalmente */
-  justify-content: center; /* Centraliza o texto horizontalmente */
-  font-size: 0.8rem; /* Tamanho do texto proporcional */
-  margin-top: -1%;
-}
+  .container-text {
+    width: 45%;
+    color: white;
+    background: #284245;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    top: -20%;
+  }
+  
 
 .container-input {
   margin-left: 50%; /* Espaço ajustável entre o rótulo e o input */
   width: 45%; /* A largura da caixa de entrada ocupa o restante do espaço */
-  border-radius: 5px;
   border: 0.5px solid #284245;
   background: #284245;
   color: white;
@@ -118,7 +116,6 @@ ion-icon {
   align-items: center; /* Centraliza o texto verticalmente */
   margin-top: -6%;
 }
-
 ion-list {
   width: 100%;
 }
@@ -163,43 +160,4 @@ ion-button{
   --background:none;
   margin-top: -5%;
   
-}
-
-
-@media (max-width: 768px) {
-  .container {
-    margin-top: 20%;
-    margin-left: 5%;
-    width: 90%; /* Usa quase toda a largura da tela */
-  }
-
-  .container-idadetext,
-  .container-dietatext {
-    width: 40%; /* Rótulo ocupa 100% da largura */
-    font-size: 0.9rem; /* Texto um pouco menor */
-    height: 2.5em; /* Altura proporcionalmente menor */
-  }
-
-  .container-idadeinput,
-  .container-dietainput {
-    margin-left: 50%; /* Remove espaço lateral para inputs */
-    width: 40%; /* Input ocupa toda a largura disponível */
-    font-size: 0.9rem; /* Texto menor */
-    height: 2.5em; /* Altura igual à dos rótulos */
-  }
-}
-
-/* Ajustes para telas muito pequenas (como smartphones) */
-@media (max-width: 480px) {
-  .container-idadetext,
-  .container-dietatext {
-    font-size: 0.8rem; /* Texto menor ainda */
-    height: 2.3em; /* Altura proporcionalmente menor */
-  }
-
-  .container-idadeinput,
-  .container-dietainput {
-    font-size: 0.8rem; /* Texto menor */
-    height: 2.3em; /* Altura igual à dos rótulos */
-  }
 }
