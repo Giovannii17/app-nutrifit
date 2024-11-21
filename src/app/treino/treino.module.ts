@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { TreinoPageRoutingModule } from './treino-routing.module';
 
 import { TreinoPage } from './treino.page';
+import { CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+
 
 @NgModule({
   imports: [
@@ -15,6 +17,7 @@ import { TreinoPage } from './treino.page';
     IonicModule,
     TreinoPageRoutingModule
   ],
-  declarations: [TreinoPage]
+  declarations: [TreinoPage],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class TreinoPageModule {}
