@@ -62,6 +62,7 @@ ion-header {
   ion-searchbar{
     margin-top: 3%;
     --background: #003339;
+    color: white;
   }
 .labels-container {
     display: flex;
@@ -88,7 +89,7 @@ ion-label {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 20px;
     padding: 20px;
-    height: 15%;
+    height: 18%;
     
 }
 

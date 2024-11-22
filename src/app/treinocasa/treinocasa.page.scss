@@ -59,9 +59,11 @@ ion-header {
 
     background:#0E393E;
   }
+
   ion-searchbar{
     margin-top: 3%;
     --background: #003339;
+    color: white;
   }
 .labels-container {
     display: flex;
@@ -88,7 +90,7 @@ ion-label {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 20px;
     padding: 20px;
-    height: 20%;
+    height: 23%;
 }
 
 .card img {
